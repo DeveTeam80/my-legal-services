@@ -36,11 +36,11 @@ Location:
     font-size: 22px;
     font-weight: 600;
     margin-right: 25px;
-    /* low gap between parallel texts */
+    /* low gap between parallel texts 
     white-space: nowrap;
     font-family: serif;
     letter-spacing: 1px; */
-}
+/* } */
 @keyframes marquee{
     0%{
         transform: translateX(0);
@@ -58,7 +58,6 @@ Location:
 .right-card iframe {
     width: 30%;
     height: 240px;
-    border: ;
     display: block;
     border-radius: 25px 25px 0 0;
 }
