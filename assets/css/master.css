@@ -1824,7 +1824,7 @@ body, html {
 }
 .hero-area.hero-area1 .hero1-side-images .hero1-side-img1 {
   position: absolute;
-  bottom: 200px;
+  bottom: 138px;
   width: 109%;
   right: -20px;
 }
@@ -1864,7 +1864,7 @@ body, html {
   .hero-area.hero-area1 .hero1-side-images .hero1-side-img2 {
     width: auto;
     left: auto;
-    bottom: 440px;
+    bottom: 392px;
     margin-right:auto ;
   }
 }

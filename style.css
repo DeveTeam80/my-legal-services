@@ -8,6 +8,17 @@ Author URI: https://themeforest.net/user/vikinglab/portfolio
 Location:
 ============================
 */
+.site-normal-font {
+    /* fallback system sans-serif for a normal look */
+}
+
+/* Use a normal/system sans-serif font across the site */
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 .marquee-section{
     width: 100%;
     overflow: hidden;
@@ -27,7 +38,7 @@ Location:
     font-weight: 600;
     margin-right: 60px;
     white-space: nowrap;
-    font-family: serif;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     letter-spacing: 1px;
 }
 
@@ -364,22 +375,92 @@ SERVICE SECTION
     padding: 80px 0;
 }
 
+.service1 .row {
+    align-items: stretch;
+}
+
+.service1 .col-lg-4,
+.service1 .col-md-6 {
+    display: flex;
+}
+
+.service1 .col-lg-4 > div,
+.service1 .col-md-6 > div {
+    display: flex;
+    flex: 1;
+    align-items: stretch;
+}
+
 .service1-box {
     background: #fff;
     padding: 30px 25px;
     border-radius: 20px;
     margin-bottom: 30px;
-    height: 100%;
     transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex: 1;
+    min-height: 0;
 }
 
 .service1-box:hover {
     transform: translateY(-5px);
 }
 
+.service1-box.text-center,
+.service1-box .hadding1,
+.service1-box .practice-list {
+    width: 100%;
+    text-align: left !important;
+}
+
+.service1-box .practice-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+    text-align: left;
+}
+
+.service1-box .practice-list li {
+    margin-bottom: 0.8rem;
+    padding-left: 26px;
+    position: relative;
+    text-align: left;
+    word-break: break-word;
+}
+
+.service1-box .practice-list li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    top: 0.28em;
+    color: #c59d5f;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.service1-box .hadding1 {
+    flex: 1;
+}
+
+.service1-box .icon {
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+.service1-box:hover .icon {
+    background: transparent !important;
+}
+
 .service1-box .icon img {
     width: 70px;
     margin: auto;
+    background: transparent;
 }
 
 .service1-box h4 {
