@@ -9,6 +9,7 @@ Location:
 ============================
 */
 .site-normal-font {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     /* fallback system sans-serif for a normal look */
 }
 
